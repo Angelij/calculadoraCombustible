@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora Precio Viaje de Angel</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Mali:wght@600&family=Poppins:wght@300&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="centerdiv mt-3 roundedCorner">
+        <h1>Calculadora de Precio de Viaje</h1>
+
+        <hr>
+        
+        <div class="formDiv">
+            <form>
+                <label for="kmRecorridos">Kilometros Recorridos (km):</label>
+                <br>
+                <input class="inputBox" type="number" id="kmRecorridos" name="kmRecorridos" value="0" min="0">
+                <br><br>
+    
+                <label for="consumoMedio">Consumo Medio (L/100km):</label>
+                <br>
+                <input class="inputBox" type="number" id="consumoMedio" name="consumoMedio" value="8" min="0">
+    
+                <br><br>
+    
+                <label for="precioCombustible">Precio Combustible (€/L):</label>
+                <br>
+                <input class="inputBox" type="number" id="precioCombustible" name="precioCombustible" value="0" min="0">
+                <br><br>
+    
+                <input class="inputButton" type="button"  onclick="calcularPrecio()" value="Calcular">
+
+                <h3 id="resultText"></h3>
+    
+            </form>
+        </div>
+
+        <hr>
+
+<footer>
+    <p class="text-center">Creado por <a href="http://github.com/Angelij">Angel Iyamu</a></p>
+</footer>
+
+
+    </div>
+
+
+	<script src="logica.js"></script>
+  </body>
+</html>

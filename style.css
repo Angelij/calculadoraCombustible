@@ -1,0 +1,79 @@
+
+html  {
+    background-color: #EFBC9C;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+h1 {
+    text-transform: uppercase;
+    margin: auto;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+
+.centerdiv {
+    background-color: #F8CDAE;
+    max-width: 900px;
+    margin: auto;
+    padding: 2em;
+}
+
+.formDiv {
+    display:flex;
+    justify-content: center;
+}
+
+.roundedCorner {
+    border-radius: 1em;
+}
+
+.mt-3  {
+    margin-top: 3em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.inputBox {
+    padding: 1em;
+    border-width: 0;
+    height: 2em;
+    border-radius: 1em;
+    background-color: #f7dcc9;
+    border-color: #F8CDAE;
+}
+
+hr {
+    margin-bottom: 1em;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    border: 0;
+    height: 1px;
+}
+
+.inputBox:focus{
+    outline: none !important;
+}
+
+.inputButton {
+    border-radius: 1em;
+    border-width: 0;
+    border-color: #9a14a7;
+    background-color: #F89E95;
+    padding: 1em;
+}
+
+.inputButton:hover {
+    background-color: #f89d9580;
+    transition: 0.3s;
+}
+
+.inputButton::selection {
+    background-color: #6d326d;
+}
+
+@font-face {
+    font-family: SanFran;
+    src: url(fonts/SF-UI-Display-Semibold.ttf);
+  }
